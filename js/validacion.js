@@ -13,8 +13,10 @@ function funcionBoton() {
         document.getElementById("apellido").value !== "" &&
         document.getElementById("email").value !== "" &&
         document.getElementById("terminos").checked) {
+        document.getElementById("alert-danger").classList.remove("show");
         showAlertSuccess()
     } else {
+        document.getElementById("alert-success").classList.remove("show")
         showAlertError()
     }
 }
